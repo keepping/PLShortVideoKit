@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/pili-engineering/PLShortVideoKit"
   s.license      = "Apache License 2.0"
   s.author       = { "pili" => "pili@qiniu.com" }
-  s.source       = { :git => "https://github.com/pili-engineering/PLShortVideoKit.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/pili-engineering/PLShortVideoKit.git", :tag => "v#{s.version}" }
   s.platform     = :ios
   s.requires_arc = true
 
