@@ -15,7 +15,8 @@
     if (self) {
         
         _iconImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
-        _iconImageView.layer.cornerRadius = 30;
+        _iconImageView.layer.cornerRadius = _iconImageView.frame.size.width / 2;
+        _iconImageView.layer.masksToBounds = YES;
         [self addSubview:_iconImageView];
         
         _iconPromptLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_iconImageView.frame)+8, CGRectGetMaxX(_iconImageView.bounds), 15)];

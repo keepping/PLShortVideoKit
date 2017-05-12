@@ -44,9 +44,9 @@
 /**
  @abstract 获取到麦克风原数据时的回调，需要注意的是这个回调在 microphone 数据的输出线程，请不要做过于耗时的操作，否则可能阻塞该线程影响音频输出或其他未知问题
  
- @since      v1.0.0
+ @since      v1.0.1
  */
-- (CVPixelBufferRef __nonnull)shortVideoSession:(PLShortVideoSession *__nonnull)session microphoneSourceDidGetPixelBuffer:(CVPixelBufferRef __nonnull)audioBuffer;
+- (CMSampleBufferRef __nonnull)shortVideoSession:(PLShortVideoSession *__nonnull)session microphoneSourceDidGetSampleBuffer:(CMSampleBufferRef __nonnull)sampleBuffer;
 
 #pragma mark -- 视频录制动作的回调
 /**
